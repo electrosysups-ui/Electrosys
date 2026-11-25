@@ -33,6 +33,7 @@ export const Route = createFileRoute("/products/")({
 function Products() {
   const upsBrands = brands.filter((b) => b.category === "UPS Systems");
   const batteryBrands = brands.filter((b) => b.category === "Industrial Batteries");
+  const stabilizerBrands = brands.filter((b) => b.category === "Voltage Stabilizers");
 
   return (
     <>
@@ -83,6 +84,24 @@ function Products() {
             </Reveal>
             <Stagger className="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               {batteryBrands.map((brand) => (
+                <BrandCard key={brand.slug} brand={brand} />
+              ))}
+            </Stagger>
+          </div>
+
+          {/* Voltage Stabilizer Brands */}
+          <div className="mt-20">
+            <Reveal>
+              <div className="flex items-center gap-3">
+                <span className="h-2 w-2 rounded-full bg-amber-500" />
+                <h3 className="text-xs font-bold tracking-[0.2em] uppercase text-slate-800">
+                  Voltage Stabilizers ({stabilizerBrands.length} Brands)
+                </h3>
+              </div>
+              <span className="mt-4 block h-px w-full bg-slate-200" aria-hidden="true" />
+            </Reveal>
+            <Stagger className="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              {stabilizerBrands.map((brand) => (
                 <BrandCard key={brand.slug} brand={brand} />
               ))}
             </Stagger>

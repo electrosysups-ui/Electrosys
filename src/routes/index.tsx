@@ -233,7 +233,7 @@ function Home() {
               to="/products"
               className="inline-flex rounded-full bg-primary px-8 py-4 text-[0.75rem] font-bold tracking-[0.14em] uppercase text-primary-foreground shadow-green transition-transform duration-200 hover:-translate-y-0.5"
             >
-              View All 15 Partner Brands
+              View All {brands.length} Partner Brands
             </Link>
           </Reveal>
         </div>

@@ -1,4 +1,16 @@
 import { cn } from "@/lib/utils";
+import csbLogo from "@/assets/brand-csb.png";
+import amaronLogo from "@/assets/brand-amaron.png";
+import exideLogo from "@/assets/brand-exide.png";
+import rocketLogo from "@/assets/brand-rocket.png";
+import deltaLogo from "@/assets/brand-delta.png";
+import eatonLogo from "@/assets/brand-eaton.svg";
+import rielloLogo from "@/assets/brand-riello.png";
+import apcLogo from "@/assets/brand-apc.svg";
+import hitachiLogo from "@/assets/brand-hitachi.svg";
+import krykardLogo from "@/assets/brand-krykard.png";
+import servomaxLogo from "@/assets/brand-servomax.png";
+import socomecLogo from "@/assets/brand-socomec.svg";
 
 export function BrandLogo({
   slug,
@@ -41,25 +53,24 @@ export function BrandLogo({
 
   if (key.includes("riello")) {
     return (
-      <div className={cn("flex items-center gap-2 font-bold", className)}>
-        <div className="flex h-8 w-8 items-center justify-center rounded bg-gradient-to-tr from-[#005BAC] to-[#E30613] p-1 text-white font-extrabold text-sm">
-          R
-        </div>
-        <div className="flex items-baseline">
-          <span className="text-2xl font-black italic tracking-tight text-[#003B70]">riello</span>
-          <span className="ml-1 text-xs font-bold text-muted-foreground uppercase">ups</span>
-        </div>
+      <div className={cn("flex items-center justify-center", className)}>
+        <img
+          src={rielloLogo}
+          alt="Riello UPS"
+          className="h-11 w-auto object-contain"
+        />
       </div>
     );
   }
 
   if (key.includes("apc")) {
     return (
-      <div className={cn("flex flex-col items-center leading-none", className)}>
-        <span className="text-2xl font-black tracking-tighter text-[#E31B23]">APC</span>
-        <span className="mt-0.5 text-[0.55rem] font-bold text-[#009639] tracking-wider">
-          by Schneider Electric
-        </span>
+      <div className={cn("flex items-center justify-center", className)}>
+        <img
+          src={apcLogo}
+          alt="APC by Schneider Electric"
+          className="h-11 w-auto object-contain"
+        />
       </div>
     );
   }
@@ -82,11 +93,12 @@ export function BrandLogo({
 
   if (key.includes("eaton")) {
     return (
-      <div className={cn("flex flex-col items-center", className)}>
-        <span className="text-2xl font-black tracking-tight text-[#005EB8]">EAT•N</span>
-        <span className="text-[0.52rem] font-semibold text-muted-foreground">
-          Powering Business Worldwide
-        </span>
+      <div className={cn("flex items-center justify-center", className)}>
+        <img
+          src={eatonLogo}
+          alt="Eaton"
+          className="h-10 w-auto object-contain"
+        />
       </div>
     );
   }
@@ -118,14 +130,12 @@ export function BrandLogo({
 
   if (key.includes("socomec")) {
     return (
-      <div className={cn("flex flex-col leading-none", className)}>
-        <div className="flex items-center gap-1">
-          <span className="h-3.5 w-3.5 bg-[#FFBF00] inline-block rounded-xs" />
-          <span className="text-xl font-black tracking-tight text-[#004B87]">socomec</span>
-        </div>
-        <span className="mt-1 text-[0.52rem] font-bold text-muted-foreground">
-          Innovative Power Solutions
-        </span>
+      <div className={cn("flex items-center justify-center", className)}>
+        <img
+          src={socomecLogo}
+          alt="Socomec - Innovative Power Solutions"
+          className="h-9 w-auto object-contain"
+        />
       </div>
     );
   }
@@ -154,9 +164,12 @@ export function BrandLogo({
 
   if (key.includes("csb")) {
     return (
-      <div className={cn("flex flex-col items-center leading-none", className)}>
-        <span className="text-[0.55rem] font-bold tracking-widest text-[#E35205]">BATTERY</span>
-        <span className="text-2xl font-black tracking-tight text-[#E35205]">CSB</span>
+      <div className={cn("flex items-center justify-center", className)}>
+        <img
+          src={csbLogo}
+          alt="CSB Battery"
+          className="h-12 w-auto object-contain"
+        />
       </div>
     );
   }
@@ -198,65 +211,60 @@ export function BrandLogo({
 
   if (key.includes("delta")) {
     return (
-      <div className={cn("flex items-center gap-2", className)}>
-        <svg viewBox="0 0 100 100" className="h-7 w-7 text-[#0066B3] shrink-0" fill="currentColor">
-          <path d="M50 15 L85 85 L15 85 Z M50 42 L32 75 L68 75 Z" />
-        </svg>
-        <div className="flex flex-col leading-none">
-          <span className="text-xl font-black tracking-wider text-[#0066B3]">DELTA</span>
-          <span className="text-[0.52rem] font-bold text-muted-foreground tracking-widest uppercase">
-            Power Solutions
-          </span>
-        </div>
+      <div className={cn("flex items-center justify-center", className)}>
+        <img
+          src={deltaLogo}
+          alt="Delta Power Solutions"
+          className="h-12 w-auto object-contain"
+        />
       </div>
     );
   }
 
   if (key.includes("hitachi")) {
     return (
-      <div className={cn("flex flex-col items-center leading-none", className)}>
-        <span className="text-2xl font-black tracking-wider text-[#E60012]">HITACHI</span>
-        <span className="mt-1 text-[0.52rem] font-bold tracking-wider text-[#1C1C1C]">
-          Inspire the Next
-        </span>
+      <div className={cn("flex items-center justify-center", className)}>
+        <img
+          src={hitachiLogo}
+          alt="Hitachi - Inspire the Next"
+          className="h-7 w-auto object-contain"
+        />
       </div>
     );
   }
 
   if (key.includes("amaron") || key.includes("quanta")) {
     return (
-      <div className={cn("flex flex-col items-center leading-none", className)}>
-        <span className="text-2xl font-black italic tracking-wider text-[#00853F]">AMARON</span>
-        <span className="mt-0.5 text-[0.62rem] font-extrabold tracking-[0.25em] text-[#1C1C1C] uppercase">
-          QUANTA
-        </span>
+      <div className={cn("flex items-center justify-center", className)}>
+        <img
+          src={amaronLogo}
+          alt="Amaron Quanta"
+          className="h-12 w-auto object-contain"
+        />
       </div>
     );
   }
 
   if (key.includes("exide")) {
     return (
-      <div className={cn("flex flex-col items-center leading-none", className)}>
-        <span className="text-2xl font-black tracking-tight text-[#ED1C24]">EXIDE</span>
-        <span className="mt-0.5 text-[0.55rem] font-black tracking-[0.2em] text-[#003B70] uppercase">
-          POWERSAFE
-        </span>
+      <div className={cn("flex items-center justify-center", className)}>
+        <img
+          src={exideLogo}
+          alt="Exide Powersafe"
+          className="h-12 w-auto object-contain"
+        />
       </div>
     );
   }
 
   if (key.includes("rocket")) {
     return (
-      <div className={cn("flex items-center gap-1.5", className)}>
-        <div className="flex h-7 w-7 items-center justify-center rounded-sm bg-[#E30613] text-white font-black text-xs">
-          🚀
-        </div>
-        <div className="flex flex-col leading-none">
-          <span className="text-xl font-black tracking-wider text-[#E30613]">ROCKET</span>
-          <span className="text-[0.5rem] font-bold text-muted-foreground uppercase">
-            VRLA Industrial
-          </span>
-        </div>
+      <div className={cn("flex items-center justify-center", className)}>
+        <img
+          src={rocketLogo}
+          alt="Rocket Battery"
+          className="h-12 w-auto object-contain"
+        />
       </div>
     );
   }
@@ -295,6 +303,30 @@ export function BrandLogo({
             Grid Solutions
           </span>
         </div>
+      </div>
+    );
+  }
+
+  if (key.includes("krykard")) {
+    return (
+      <div className={cn("flex items-center justify-center", className)}>
+        <img
+          src={krykardLogo}
+          alt="Krykard"
+          className="h-11 w-auto object-contain"
+        />
+      </div>
+    );
+  }
+
+  if (key.includes("servomax")) {
+    return (
+      <div className={cn("flex items-center justify-center", className)}>
+        <img
+          src={servomaxLogo}
+          alt="Servomax"
+          className="h-10 w-auto object-contain"
+        />
       </div>
     );
   }

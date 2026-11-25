@@ -13,7 +13,7 @@ export type Brand = {
   slug: string;
   name: string;
   shortName: string;
-  category: "UPS Systems" | "Industrial Batteries";
+  category: "UPS Systems" | "Industrial Batteries" | "Voltage Stabilizers";
   tagline: string;
   description: string;
   partnershipTitle: string;
@@ -377,117 +377,117 @@ export const brands: Brand[] = [
       },
     ],
   },
-  {
-    slug: "narada",
-    name: "MP Narada",
-    shortName: "Narada",
-    category: "Industrial Batteries",
-    tagline: "Advanced Lithium & Lead Carbon Energy Storage Solutions",
-    description:
-      "Narada is an international pioneer in stored energy solutions, specializing in high-performance VRLA, Lead Carbon, and Lithium-ion battery systems.",
-    partnershipTitle: "Electrosys & Narada Partnership",
-    partnershipBody:
-      "Electrosys supplies Narada high-rate VRLA and advanced Lithium-ion battery racks with integrated BMS telemetry for modern UPS systems.",
-    partnershipPoints: [
-      "Advanced Lead-Carbon and Lithium Iron Phosphate (LiFePO4) chemistries",
-      "High cycle life and rapid recharge capability",
-      "Front access terminals for streamlined maintenance",
-      "Wide operating temperature range tolerance",
-    ],
-    solutions: [
-      "Modern Edge & Core Data Centers",
-      "Telecom Towers & Micro-grid Sites",
-      "Renewable Energy & Battery Storage",
-      "Industrial Heavy Process Standby",
-    ],
-    products: [
-      {
-        name: "Narada High Rate UPS Series",
-        description:
-          "Advanced VRLA battery modules offering exceptional high-current discharge efficiency and compact spatial design.",
-        image: batteryImage,
-        capacity: "Capacity: 12V 50Ah – 200Ah",
-        specs: [
-          { label: "Terminal", value: "Front Access / Top Terminal" },
-          { label: "Technology", value: "VRLA Lead-Acid" },
-        ],
-      },
-    ],
-  },
-  {
-    slug: "rblti",
-    name: "RBLTI",
-    shortName: "RBLTI",
-    category: "Industrial Batteries",
-    tagline: "Industrial Battery & Stored Energy Solutions",
-    description:
-      "RBLTI provides specialized industrial battery cells and heavy-duty standby power solutions designed for rigorous operating demands.",
-    partnershipTitle: "Electrosys & RBLTI Partnership",
-    partnershipBody:
-      "We integrate RBLTI battery banks into commercial, industrial, and infrastructure power protection schemes with full lifecycle testing.",
-    partnershipPoints: [
-      "Engineered for deep resilience and cyclical endurance",
-      "Heavy-duty plate construction",
-      "Optimized for high-vibration and industrial ambient profiles",
-      "Comprehensive warranty support",
-    ],
-    solutions: [
-      "Industrial Plant Controls",
-      "Utility & Switchgear Standby",
-      "Emergency Power Systems",
-      "Commercial UPS Installations",
-    ],
-    products: [
-      {
-        name: "RBLTI Industrial Standby Battery",
-        description:
-          "Robust lead-acid and AGM battery blocks built for dependable standby power across commercial and industrial environments.",
-        image: batteryImage,
-        capacity: "Capacity tailored to site requirements",
-        specs: [
-          { label: "Duty", value: "Continuous Float Standby" },
-          { label: "Mounting", value: "Cabinet / Tier Stand" },
-        ],
-      },
-    ],
-  },
-  {
-    slug: "franklin-electric",
-    name: "Franklin Electric",
-    shortName: "Franklin Electric",
-    category: "Industrial Batteries",
-    tagline: "Grid Solutions & Battery Monitoring Intelligence",
-    description:
-      "Franklin Electric Grid Solutions manufactures industry-leading battery monitoring, testing, and intelligence systems for critical power infrastructure.",
-    partnershipTitle: "Electrosys & Franklin Electric Partnership",
-    partnershipBody:
-      "Electrosys installs Franklin Electric cell management systems and handheld testers to ensure predictive battery health monitoring.",
-    partnershipPoints: [
-      "Cellwatch continuous battery monitoring systems",
-      "Handheld conductance testers and diagnostic meters",
-      "Early detection of failing individual cells",
-      "Automated alarm notifications and data logging",
-    ],
-    solutions: [
-      "Continuous Battery Health Monitoring",
-      "Data Center Battery Room Compliance",
-      "Utility Substation DC Monitoring",
-      "Preventive Maintenance Telemetry",
-    ],
-    products: [
-      {
-        name: "Franklin Electric Battery Monitoring System",
-        description:
-          "Automated on-line battery monitoring solution delivering real-time internal resistance, voltage, and temperature data per cell.",
-        image: batteryImage,
-        capacity: "Modular monitoring for 12V to 480V DC banks",
-        specs: [
-          { label: "Measurement", value: "Impedance, Voltage, Temperature" },
-          { label: "Connectivity", value: "MODBUS, SNMP, Ethernet" },
-        ],
-      },
-    ],
-  },
+  // {
+  //   slug: "narada",
+  //   name: "MP Narada",
+  //   shortName: "Narada",
+  //   category: "Industrial Batteries",
+  //   tagline: "Advanced Lithium & Lead Carbon Energy Storage Solutions",
+  //   description:
+  //     "Narada is an international pioneer in stored energy solutions, specializing in high-performance VRLA, Lead Carbon, and Lithium-ion battery systems.",
+  //   partnershipTitle: "Electrosys & Narada Partnership",
+  //   partnershipBody:
+  //     "Electrosys supplies Narada high-rate VRLA and advanced Lithium-ion battery racks with integrated BMS telemetry for modern UPS systems.",
+  //   partnershipPoints: [
+  //     "Advanced Lead-Carbon and Lithium Iron Phosphate (LiFePO4) chemistries",
+  //     "High cycle life and rapid recharge capability",
+  //     "Front access terminals for streamlined maintenance",
+  //     "Wide operating temperature range tolerance",
+  //   ],
+  //   solutions: [
+  //     "Modern Edge & Core Data Centers",
+  //     "Telecom Towers & Micro-grid Sites",
+  //     "Renewable Energy & Battery Storage",
+  //     "Industrial Heavy Process Standby",
+  //   ],
+  //   products: [
+  //     {
+  //       name: "Narada High Rate UPS Series",
+  //       description:
+  //         "Advanced VRLA battery modules offering exceptional high-current discharge efficiency and compact spatial design.",
+  //       image: batteryImage,
+  //       capacity: "Capacity: 12V 50Ah – 200Ah",
+  //       specs: [
+  //         { label: "Terminal", value: "Front Access / Top Terminal" },
+  //         { label: "Technology", value: "VRLA Lead-Acid" },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   slug: "rblti",
+  //   name: "RBLTI",
+  //   shortName: "RBLTI",
+  //   category: "Industrial Batteries",
+  //   tagline: "Industrial Battery & Stored Energy Solutions",
+  //   description:
+  //     "RBLTI provides specialized industrial battery cells and heavy-duty standby power solutions designed for rigorous operating demands.",
+  //   partnershipTitle: "Electrosys & RBLTI Partnership",
+  //   partnershipBody:
+  //     "We integrate RBLTI battery banks into commercial, industrial, and infrastructure power protection schemes with full lifecycle testing.",
+  //   partnershipPoints: [
+  //     "Engineered for deep resilience and cyclical endurance",
+  //     "Heavy-duty plate construction",
+  //     "Optimized for high-vibration and industrial ambient profiles",
+  //     "Comprehensive warranty support",
+  //   ],
+  //   solutions: [
+  //     "Industrial Plant Controls",
+  //     "Utility & Switchgear Standby",
+  //     "Emergency Power Systems",
+  //     "Commercial UPS Installations",
+  //   ],
+  //   products: [
+  //     {
+  //       name: "RBLTI Industrial Standby Battery",
+  //       description:
+  //         "Robust lead-acid and AGM battery blocks built for dependable standby power across commercial and industrial environments.",
+  //       image: batteryImage,
+  //       capacity: "Capacity tailored to site requirements",
+  //       specs: [
+  //         { label: "Duty", value: "Continuous Float Standby" },
+  //         { label: "Mounting", value: "Cabinet / Tier Stand" },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   slug: "franklin-electric",
+  //   name: "Franklin Electric",
+  //   shortName: "Franklin Electric",
+  //   category: "Industrial Batteries",
+  //   tagline: "Grid Solutions & Battery Monitoring Intelligence",
+  //   description:
+  //     "Franklin Electric Grid Solutions manufactures industry-leading battery monitoring, testing, and intelligence systems for critical power infrastructure.",
+  //   partnershipTitle: "Electrosys & Franklin Electric Partnership",
+  //   partnershipBody:
+  //     "Electrosys installs Franklin Electric cell management systems and handheld testers to ensure predictive battery health monitoring.",
+  //   partnershipPoints: [
+  //     "Cellwatch continuous battery monitoring systems",
+  //     "Handheld conductance testers and diagnostic meters",
+  //     "Early detection of failing individual cells",
+  //     "Automated alarm notifications and data logging",
+  //   ],
+  //   solutions: [
+  //     "Continuous Battery Health Monitoring",
+  //     "Data Center Battery Room Compliance",
+  //     "Utility Substation DC Monitoring",
+  //     "Preventive Maintenance Telemetry",
+  //   ],
+  //   products: [
+  //     {
+  //       name: "Franklin Electric Battery Monitoring System",
+  //       description:
+  //         "Automated on-line battery monitoring solution delivering real-time internal resistance, voltage, and temperature data per cell.",
+  //       image: batteryImage,
+  //       capacity: "Modular monitoring for 12V to 480V DC banks",
+  //       specs: [
+  //         { label: "Measurement", value: "Impedance, Voltage, Temperature" },
+  //         { label: "Connectivity", value: "MODBUS, SNMP, Ethernet" },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     slug: "amaron-quanta",
     name: "Amaron Quanta",
@@ -669,6 +669,81 @@ export const brands: Brand[] = [
         specs: [
           { label: "Technology", value: "Heavy Duty High-Rate AGM" },
           { label: "Compliance", value: "RDSO / IEEE Compliant" },
+        ],
+      },
+    ],
+  },
+  // --- VOLTAGE STABILIZERS (2 Brands) ---
+  {
+    slug: "krykard",
+    name: "Krykard",
+    shortName: "Krykard",
+    category: "Voltage Stabilizers",
+    tagline: "Precision Servo Controlled Voltage Stabilizers & Power Conditioners",
+    description:
+      "Krykard (Atandra Energy) is one of India's most trusted names in servo-controlled voltage stabilizers and power quality instrumentation, safeguarding sensitive CNC, medical, and industrial equipment from voltage fluctuations.",
+    partnershipTitle: "Electrosys & Krykard Partnership",
+    partnershipBody:
+      "Electrosys supplies, installs, and services Krykard single-phase and three-phase air-cooled and oil-cooled servo voltage stabilizers tailored to industrial, commercial, and healthcare loads.",
+    partnershipPoints: [
+      "Fast voltage correction speed with ±1% output voltage regulation",
+      "Available in both Air-Cooled and Oil-Cooled industrial configurations",
+      "True RMS sensing with digital microcontroller-based protection",
+      "High efficiency (>98%) with zero waveform distortion",
+    ],
+    solutions: [
+      "CNC & Precision Manufacturing",
+      "Medical & Diagnostic Imaging",
+      "Commercial HVAC & Elevators",
+      "IT & Telecom Infrastructure",
+    ],
+    products: [
+      {
+        name: "Krykard Servo Controlled Voltage Stabilizer",
+        description:
+          "Microcontroller-based single and three-phase servo voltage stabilizers engineered for continuous duty operation under wide input voltage variations.",
+        image: upsImage,
+        capacity: "Capacity range: 1 kVA – 3000 kVA",
+        specs: [
+          { label: "Regulation", value: "±1% Output Accuracy" },
+          { label: "Cooling", value: "Air-Cooled / Oil-Cooled" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "servomax",
+    name: "Servomax",
+    shortName: "Servomax",
+    category: "Voltage Stabilizers",
+    tagline: "Heavy-Duty Servo Voltage Stabilizers & Isolation Transformers",
+    description:
+      "Servomax is a leading Indian manufacturer of industrial-grade servo controlled voltage stabilizers and power conditioning systems designed for rugged utility conditions and continuous industrial operations.",
+    partnershipTitle: "Electrosys & Servomax Partnership",
+    partnershipBody:
+      "Electrosys delivers end-to-end sizing, supply, commissioning, and preventive maintenance for Servomax servo stabilizers across factories, hospitals, and commercial complexes.",
+    partnershipPoints: [
+      "Rugged copper-wound buck-boost and variac assemblies for long service life",
+      "Wide input voltage window handling severe grid sags and surges",
+      "Built-in overload, short-circuit, and phase-reversal protections",
+      "Optional built-in ultra-isolation transformer for sensitive loads",
+    ],
+    solutions: [
+      "Industrial Plants & Textile Mills",
+      "Hospitals & Laboratories",
+      "Cold Storage & Processing Units",
+      "Commercial Buildings & Data Rooms",
+    ],
+    products: [
+      {
+        name: "Servomax Industrial Servo Stabilizer",
+        description:
+          "High-reliability three-phase balanced and unbalanced servo voltage stabilizers built for heavy industrial machinery and critical commercial loads.",
+        image: upsImage,
+        capacity: "Capacity range: 3 kVA – 2500 kVA",
+        specs: [
+          { label: "Efficiency", value: "Up to 98.5%" },
+          { label: "Phase Type", value: "1-Phase & 3-Phase (Balanced / Unbalanced)" },
         ],
       },
     ],
