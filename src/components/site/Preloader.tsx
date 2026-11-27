@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { Logo } from "./Logo";
 
 // In-memory tracker so intro plays on page load / refresh, but doesn't disrupt SPA navigation
 let hasShownIntro = false;
@@ -60,21 +61,17 @@ export function Preloader() {
           />
 
           <motion.div
-            className="relative z-10 flex flex-col items-center rounded-3xl bg-white/98 px-10 py-8 sm:px-16 sm:py-12 shadow-2xl ring-1 ring-white/30 backdrop-blur-md"
+            className="relative z-10 flex flex-col items-center rounded-3xl bg-white/98 px-12 py-10 sm:px-24 sm:py-16 md:px-28 md:py-20 shadow-2xl ring-1 ring-white/30 backdrop-blur-md"
             initial={{ opacity: 0, scale: 0.92, y: 14 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: -20 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
             {/* Prominent, large company logo */}
-            <img
-              src="/logo.png"
-              alt="Electrosys Power Solutions"
-              className="h-20 sm:h-28 md:h-36 w-auto max-w-[300px] sm:max-w-[460px] md:max-w-[560px] object-contain drop-shadow-sm"
-            />
+            <Logo size="lg" />
 
             {/* Elegant energy progress bar */}
-            <div className="mt-6 sm:mt-8 h-1 sm:h-1.5 w-44 sm:w-64 overflow-hidden rounded-full bg-slate-100">
+            <div className="mt-8 sm:mt-10 h-2 sm:h-2.5 w-64 sm:w-96 md:w-[440px] overflow-hidden rounded-full bg-slate-100">
               <motion.span
                 className="block h-full w-full origin-left rounded-full bg-gradient-to-r from-primary to-primary-deep"
                 initial={{ scaleX: 0 }}
@@ -83,7 +80,7 @@ export function Preloader() {
               />
             </div>
 
-            <p className="mt-3 text-[0.7rem] sm:text-xs font-bold tracking-[0.2em] uppercase text-muted-foreground/75">
+            <p className="mt-5 sm:mt-6 text-sm sm:text-base md:text-lg font-bold tracking-[0.22em] uppercase text-muted-foreground/80">
               Electrical Safety & Power Resilience
             </p>
           </motion.div>

@@ -13,7 +13,7 @@ export const site = {
   whatsappDisplay: "+91 97696 96021",
   email: "sales@electrosys.in",
   address: {
-    line1: "Jai Industrial Estate, Plot No. TS-6",
+    line1: " Unit No. 14 B Wing Jai Industrial Estate, Plot No. TS-6",
     line2: "Near State Bank of India, MIDC, Dombivli East",
     city: "Dombivli, Maharashtra",
     postcode: "421203",

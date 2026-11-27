@@ -9,7 +9,7 @@ import rielloLogo from "@/assets/brand-riello.png";
 import apcLogo from "@/assets/brand-apc.svg";
 import hitachiLogo from "@/assets/brand-hitachi.svg";
 import krykardLogo from "@/assets/brand-krykard.png";
-import servomaxLogo from "@/assets/brand-servomax.png";
+import servocomLogo from "@/assets/brand-servocom.png";
 import socomecLogo from "@/assets/brand-socomec.svg";
 
 export function BrandLogo({
@@ -319,13 +319,13 @@ export function BrandLogo({
     );
   }
 
-  if (key.includes("servomax")) {
+  if (key.includes("servocom")) {
     return (
       <div className={cn("flex items-center justify-center", className)}>
         <img
-          src={servomaxLogo}
-          alt="Servomax"
-          className="h-10 w-auto object-contain"
+          src={servocomLogo}
+          alt="Servocom"
+          className="h-11 w-auto object-contain"
         />
       </div>
     );
